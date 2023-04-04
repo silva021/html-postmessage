@@ -1,16 +1,13 @@
-<script>
+<script type="text/javascript">
     function enviarMensagem() {
         window.postMessage('oi', '*');
     }
-    </script>
 
-<script type="text/javascript">
     function showAndroidToast(toast) {
         Android.showToast(toast);
     }
 </script>
 
-<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+<button onclick="showAndroidToast('Hello Android!')">Olá</button>
 
-
-<button onclick="enviarMensagem()">Enviar mensagem</button>
+<button onclick="enviarMensagem()">Post MESSAGE</button>
