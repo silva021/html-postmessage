@@ -3,11 +3,11 @@
         window.postMessage('oi', '*');
     }
 
-    function showAndroidToast(toast) {
+    function onCloseScreen() {
         AndroidListenerTest.onCloseScreen;
     }
 </script>
 
-<button onclick="showAndroidToast('Hello Android!')">Show Toast</button>
+<button onclick="onCloseScreen()">Fecha tela</button>
 
 <button onclick="enviarMensagem()">Post MESSAGE</button>
