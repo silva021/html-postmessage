@@ -2,12 +2,6 @@
     function enviarMensagem() {
         window.postMessage('closeWebview', '*');
     }
-
-    function onCloseScreen() {
-        AndroidListenerTest.onCloseScreen();
-    }
 </script>
-
-<button onclick="onCloseScreen()">Fecha tela</button>
 
 <button onclick="enviarMensagem()">Post MESSAGE</button>
