@@ -1,7 +1,8 @@
+
 <script type="text/javascript">
-    function enviarMensagem() {
-        window.postMessage('closeWebview', '*');
+    function shareProfile(message) {
+        ProfilePageInterface.shareProfile(message);
     }
 </script>
 
-<button onclick="enviarMensagem()">Post MESSAGE</button>
+<button onclick="shareProfile('Hello Android!')">Post MESSAGE</button>
